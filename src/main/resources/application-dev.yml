@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    username: root
+    password: '123456'
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/education_activities?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Hongkong
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      idle-timeout: 30000 # 空闲连接多久被移除
+      connection-timeout: 1000 # 连接超时
+      connection-test-query: SELECT 1
+      minimum-idle: 5 # 最少空闲连接数
+      maximum-pool-size: 15
+      pool-name: HikariCP
+      auto-commit: true
+
+logging:
+  config: classpath:logback-spring-dev.xml
