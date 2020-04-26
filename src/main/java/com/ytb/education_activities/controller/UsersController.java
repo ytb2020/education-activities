@@ -170,4 +170,10 @@ public class UsersController {
         return UsersService.selectAll();
     }
 
+    @RequestMapping(value = "/wgdCsh")
+    public String wgdCsh(){
+        String s="Wang GuoDe";
+        return s;
+    }
+
 }
