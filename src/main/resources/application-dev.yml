@@ -6,7 +6,7 @@ spring:
     username: root
     password: 'YTB123456ytb'
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:8090/education_activities?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Hongkong
+    url: jdbc:mysql://118.190.148.196:8090/education_activities?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Hongkong
     type: com.zaxxer.hikari.HikariDataSource
     hikari:
       idle-timeout: 30000 # 空闲连接多久被移除
